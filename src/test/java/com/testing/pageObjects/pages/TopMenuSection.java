@@ -17,14 +17,14 @@ public class TopMenuSection extends BasePage {
   public static By LOGIN_BUTTON = css("#navbarLoginButton > span");
   public static By SEARCH_ICON  = css("#searchQuery");
   public static By SEARCH_FIELD = css("#mat-input-0");
-  public static By SHOPPING_CART_BUTTON;
-  public static By CHOOSE_LANGUAGE_BUTTON = text("Language selection menu");
-  public static By LANGUAGE_LIST = css("#mat-menu-panel-1 > div");
-  public static By ORDERS_AND_PAYMENT_OPTION;
-  public static By PRIVACY_AND_SECURITY_OPTION;
-  public static By LOGOUT_BUTTON;
-  public static By CHANGE_PASSWORD_BUTTON;
-  public static By DIGITAL_WALLET_OPTION;
+  public static By SHOPPING_CART_BUTTON = css("button[aria-label='Show the shopping cart']");
+  public static By CHOOSE_LANGUAGE_BUTTON = css("button[aria-label='Language selection menu']");
+  public static By LANGUAGE_LIST = css("label[class='mat-radio-label']");
+  public static By ORDERS_AND_PAYMENT_OPTION = css("button[aria-label='Show Orders and Payment Menu']");
+  public static By PRIVACY_AND_SECURITY_OPTION = css("button[aria-label='Show Privacy and Security Menu']");
+  public static By LOGOUT_BUTTON = css("button[id='navbarLogoutButton']");
+  public static By CHANGE_PASSWORD_BUTTON = css("button[aria-label='Go to change password page']");
+  public static By DIGITAL_WALLET_OPTION = css("button[aria-label='Go to wallet page']");
 
   // Public methods
   // -------------------------------------------------------------------------------------------------------------------
