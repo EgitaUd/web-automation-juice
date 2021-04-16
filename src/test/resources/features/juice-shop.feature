@@ -55,7 +55,7 @@ Feature: Juice Shop Actions
     And  I click "Registration button"
     Then I should be on "Login" page
     And  "Registration completed successfully." should be "visible"
-  @run
+
   Scenario Outline: Change language
     When I "log in" with the following data:
       | Email | Password |
@@ -74,7 +74,7 @@ Feature: Juice Shop Actions
     | Suomalainen | Tilaukset ja Maksut | Yksityisyys & Turvallisuus        | Kirjaudu ulos |
     | Pусский     | Заказы и Оплата     | Конфиденциальность и безопасность | Выход         |
     | 日本の       | 注文と支払い          | プライバシーとセキュリテ              |  ログアウト     |
-
+  @run
   Scenario: Increase wallet balance
     When I "create an account" with the following data:
       | Email field  | Password field | Repeat Password field | Security Question | Security Answer field                                |

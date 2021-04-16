@@ -13,9 +13,9 @@ import net.thucydides.core.annotations.DefaultUrl;
 public class BasketPage extends HomePage {
   // Locators
   // -------------------------------------------------------------------------------------------------------------------
-  public static By YOUR_BASKET_TITLE;
-  public static By ROW_ITEMS;
-  public static By CHECKOUT_BUTTON;
+  public static By YOUR_BASKET_TITLE = text(" Your Basket ");
+  public static By ROW_ITEMS = css("body > app-root > div > mat-sidenav-container > mat-sidenav-content > app-basket > mat-card > app-purchase-basket > mat-table > mat-row");//nav pareiz
+  public static By CHECKOUT_BUTTON = css("#checkoutButton");
   // Public methods
   // -------------------------------------------------------------------------------------------------------------------
   public void waitForPageToLoad(){
